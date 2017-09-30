@@ -1,0 +1,28 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+  <f:block>
+      <table>
+          <f:optionalBlock name="enableJs" title="Upload js step" checked="${instance.isJsEnabled()}">
+              <f:entry title="JS file Path" field="jsFilePath" description="Path to js script file">
+                      <f:textbox />
+                    </f:entry>
+                  <f:entry title="JSON file Path" field="jsonFilePath" description="Path to json descriptor file">
+                      <f:textbox />
+                    </f:entry>
+          </f:optionalBlock>
+      </table>
+  </f:block>
+  <f:block>
+        <table>
+            <f:optionalBlock name="enableJar" title="Upload java steps" checked="${instance.isJarEnabled()}">
+                <f:entry title="JAR file Path" field="jarFilePath" description="Path to jar file">
+                        <f:textbox />
+                      </f:entry>
+            </f:optionalBlock>
+        </table>
+    </f:block>
+
+  <f:entry title="Overwrite" field="overwrite" description="If checked, existing step will be overwritten">
+    <f:checkbox/>
+  </f:entry>
+</j:jelly>
