@@ -1,6 +1,6 @@
 # Introduction
 
-Jenkins plugin for Testein - SaaS for easy and fast creating, managing and running automation tests without code knowledge.
+Jenkins plugin for [Testein](http://testein.com) - SaaS for easy and fast creating, managing and running automation tests without code knowledge.
 
 It contains two modules:
 1) **Run tests**
@@ -33,7 +33,7 @@ For example, you can build your Java custom steps using Maven and then upload th
 
 You need to specify:
 
-    - If checked **"Upload js step"** - pathes to .js script file and .json descriptor file
-    - If checked **"Upload java steps"** - path to the .jar file
+    - If checked "Upload js step" - pathes to .js script file and .json descriptor file
+    - If checked "Upload java steps" - path to the .jar file
 
 **Note:** all file paths are relative to workspace root
