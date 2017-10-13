@@ -43,7 +43,11 @@ public class ApplicationExecutor extends BaseExecutor {
                     break;
 
                 case 402:
-                    listener.error("Sorry, you don't have enough credit on your account");
+                    listener.error("Sorry, you don't have enough credit in your account");
+                    break;
+
+                case 406:
+                    listener.error("Sorry, you have exceeded monthly runs in your account");
                     break;
 
                 default:
